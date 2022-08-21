@@ -1,0 +1,130 @@
+*{
+  Margin:0;
+  Padding:0;
+  box-sizing: border-box ;
+}
+:root{
+  --vermelho:#e50914;
+  --preto:#141414;
+}
+Body{
+  Background-color:var(--preto);
+  Color:white;
+  Font-family:'Times New Roman',Times,serif;
+}
+ Header .Container{
+  Display:flex;
+  Flex-direction:row;
+  Flex-wrap:nowrap;
+  Margin-right:10px;
+  Align-items: center;
+  Justify-content:space-between;
+  Margin-top:1.1vh;
+} 
+ .logo{
+  Color:var(--vermelho);
+  Font-family:"Arial" , Times ;
+  Margin-left:5px;
+  Font-size:6vw;
+  Margin-bottom:5px;
+  Margin-top:5px;
+  Text-align:center;
+  
+  
+}
+
+Header nav a {
+  Font-size:3vw;
+  Text-decoration:none;
+  Color:#abafb0;
+  Margin-left:10px;
+  
+}
+Header nav a:hover{
+  Color:#d6dadb;
+}
+Main .filme-principal{
+  Background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) , url("https://www.themoviedb.org/t/p/original/npmxvN3JhBxfKfkwZNjV03joSdy.jpg");
+  Background-size:100% 100%;
+  Height:50vh;
+  Width:100vw;
+  Display:flex;
+  Flex-direction:column;
+  Justify-content:center;
+  Align-items:flex-start;
+  Padding-top:50px;
+  Padding-left:10px;
+  Padding-right:10px;
+}
+.titulo{
+  Font-size:30px;
+  Font-family:Optima, sans-serif;
+}
+.descricao{
+  Font-size:12px;
+  Margin-top:5px;
+  margin-bottom:15px;
+  Text-align:justify;
+ 
+}
+.botao{
+  
+  Padding:10px;
+  Background-color:rgba(0,0,0,.50);
+  Border:1px solid black;
+  Color:white;
+  Margin-right:10px;
+  Margin-bottom:10px;
+  Transition:0.4s;
+  Cursor:pointer;
+}
+.botao:hover{
+  Color:black;
+  Background-color:white;
+  
+}
+.botao i{
+  Margin-right:5px;
+}
+@media(min-width:600px){
+ .descricao{
+ Padding-top:20px;
+   Width:70vw;
+   Font-size:20px;
+  
+ }
+Main .filme-principal{
+  Height:500px;
+}
+.botao{
+  Font-size:20px;
+  Padding:20px;
+  
+}
+
+} 
+.box-filmes{
+  Height:50%;
+  Width:50%;
+  Display:block;
+  Cursor:pointer;
+}
+.filmes-carrossel{
+  Margin-top:10px;
+}
+Footer p{
+  padding:10px;
+  color:var(--vermelho);
+  Text-align:center;
+  text-decoration:none;
+}
+p>a{
+  text-decoration:none;
+  font-style:bold;
+  color:var(--vermelho);
+}
+p>a:hover{
+  Font-size:18px;
+  Text-decoration:underline;
+  Cursor:po;
+}
